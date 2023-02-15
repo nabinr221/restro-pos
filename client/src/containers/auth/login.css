@@ -1,0 +1,26 @@
+
+.login-box {
+    width: 60%;
+    padding: 2rem;
+    background: #fff;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    border: 1px solid rgb(202, 197, 197);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.login-box .img{margin-right: 1rem;
+    padding: 1rem;
+    border-right: 2px solid rgb(202, 197, 197);
+}
+.login-box .content{
+width: 400px;
+margin: 1rem ;
+
+}

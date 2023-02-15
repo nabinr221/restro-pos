@@ -38,9 +38,11 @@ hr {
   background-color: rgb(30, 120, 210);
 }
 .btnSubmit:hover {
+
 background-color: #8875a8;
 }
 
 .inputBox {
-  margin: .5rem 0;
+  background-color: transparent;
+  margin: .7rem 0;
 }
