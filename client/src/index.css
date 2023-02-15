@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(249, 245, 245);
+}
+
+hr {
+
+  border: 1px solid #dddddd;
+}
+
+.modal-footer {
+  margin: 2rem 0 1.2rem 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btnCancel {
+  padding: 1rem;
+  width: auto;
+  font-weight: 600;
+  color: #fff;
+  background-color: chocolate;
+}
+.btnCancel:hover{
+  background-color: rgb(255, 123, 29);
+}
+.btnSubmit {
+  padding: 1rem;
+  width: auto;
+  font-weight: 600;
+  color: #fff;
+  background-color: rgb(30, 120, 210);
+}
+.btnSubmit:hover {
+background-color: #8875a8;
+}
+
+.inputBox {
+  margin: .5rem 0;
+}

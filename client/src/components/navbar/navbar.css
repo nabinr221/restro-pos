@@ -1,0 +1,119 @@
+.navbar {
+    width: 100%;
+    padding: .5rem;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navbar .navbar-left {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.navbar .nav-right {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+.navbar .navbar-left .search-box {
+    display: flex;
+    align-items: center;
+    border: 2px solid #d1c4c4;
+    padding: .5rem 1rem;
+}
+
+.navbar .navbar-left .search-box input {
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #727171;
+}
+
+.navbar .navbar-left .search-box input::placeholder {
+    color: #d1c4c4;
+}
+
+.navbar .navbar-left .search-box .search-icon {
+    cursor: pointer;
+    color: #c5baba;
+}
+
+.navbar .nav-icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar .nav-icon span {
+    padding: 5px;
+    font-size: 12px;
+    background-color: rgb(166, 188, 23);
+    border-radius: 50%;
+    border: 5px solid #fff;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    color: #fff;
+}
+
+.navbar .nav-profile {
+    cursor: pointer;
+}
+
+.navbar .nav-profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.navbar .nav-profile .dropdown-content {
+    min-width: 160px;
+    padding: 1rem;
+    background-color: #fff;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .nav-profile .dropdown-content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 1rem;
+
+}
+
+.navbar .nav-profile .dropdown-content ul li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: center;
+    text-align: start;
+    font-weight: 600;
+    padding: .5rem;
+    margin-bottom: 15px;
+    transition: 0.5s;
+}
+
+.navbar .nav-profile .dropdown-content ul li:hover {
+    background-color: #8875a8;
+    color: #fff;
+}
+
+.nav-profile:hover .dropdown-content {
+    display: block;
+}
+
+.nav-profile:hover .dropbtn {
+    background-color: #3e8e41;
+}

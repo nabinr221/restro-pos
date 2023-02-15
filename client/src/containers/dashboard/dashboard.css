@@ -1,0 +1,43 @@
+.dashboard {
+    position: relative;
+    display: flex;
+}
+
+.main-content {
+    width: 100vh;
+    margin: 0 1rem;
+    padding-right: 1rem;
+    flex: 6;
+}
+
+.dashboard .main-content .content {
+    margin: 1.5rem 0;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.dashboard .main-content .menu-content {
+    background-color: #fff;
+    margin: 1.5rem 0;
+    padding: 15px;
+
+  
+
+}
+
+.chart-box {
+    /* width: auto; */
+    margin: 10px 0;
+    display: flex;
+    gap: 2rem;
+    padding: 10px;
+}
+
+.tables-area {
+    margin: 3rem;
+}

@@ -1,0 +1,11 @@
+.content-wrapper {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 30%;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+form {
+    padding: 1rem;
+}

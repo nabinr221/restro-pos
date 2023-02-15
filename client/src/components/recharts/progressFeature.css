@@ -1,0 +1,33 @@
+.feature-box {
+    width: 300px;
+
+    padding: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+}
+
+.feature-box .feature-top {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #999;
+
+}
+
+.feature-content {
+    padding: 10px;
+    margin: auto;
+    width: 150px;
+
+}
+
+.feature-box-title {
+    padding: 10px;
+    text-align: center;
+}
+
+.feature-box-title span {
+    font-weight: 500;
+    color: #999;
+}

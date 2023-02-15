@@ -1,0 +1,13 @@
+.modal-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-box {
+    margin-bottom: 2rem;
+}
+
+.form-box .inputBox {
+    margin: 1.5rem 0;
+}
