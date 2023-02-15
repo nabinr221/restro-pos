@@ -21,18 +21,14 @@
 * Pagination
 
 ## Features
-- [x] User
-  - [x] Login
-  - [x] Registration
-  - [x] MultiUser Login(user, admin, rider)
-  - [x] Add, Update, Delete Items used dynamic form
-  - [x] Add, Update, Delete Orders used multi state dynamic form
-  - [x] User Profile
 - [x] Admin
-  - [x] Display Orders Data
-  - [x] Pagination
-  - [x] Accept/ Reject Orders
-  - [x] Admin Profile
+  - [x] Login
+  - [x] manage Users
+  - [x] MultiUser Login(counter, admin)
+  - [x] Add, Update, Delete menus, tables
+  - [x] managing orders
+   - [x] User Profile
+-
 
 
 
