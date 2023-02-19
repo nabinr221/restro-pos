@@ -15,13 +15,13 @@ const Sidebar = () => {
                 <div className="content">
                     <ul>
                         <p className='title'>Main</p>
-                        <NavLink to='/' className='navlink'><li className='active'> <MdOutlineDashboard size={22} /> <span> Dashboard</span>  </li></NavLink>
+                        <NavLink to='/' className='navlink'><li > <MdOutlineDashboard size={22} /> <span> Dashboard</span>  </li></NavLink>
 
                         <p className='title'>List</p>
                         <NavLink to='/tables' className='navlink'> <li><MdChairAlt size={22} /><span>Tables</span></li></NavLink>
                         <NavLink to='/menus' className='navlink'> <li><MdOutlineRestaurantMenu size={22} /><span>Menus</span></li></NavLink>
                         <li><RiFileList3Line size={22} /><span>Orders</span></li>
-                        <li><FiUser size={22} /><span>Users</span></li>
+                        <NavLink to='/users' className='navlink'> <li><FiUser size={22} /><span>Users</span></li></NavLink>
 
                         <p className='title'>Analysis</p>
                         <li><TbReport size={22} /><span>Report</span></li>

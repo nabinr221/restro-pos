@@ -10,7 +10,7 @@ import { Box, Modal } from '@mui/material';
 import { AiOutlineClose } from 'react-icons/ai'
 import { TextField, Button } from '@mui/material';
 import { useFormik } from 'formik';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import * as Yup from 'yup';
 import axios from 'axios'
@@ -29,7 +29,7 @@ const style = {
 };
 
 const Tables = () => {
-  
+
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -63,7 +63,7 @@ const Tables = () => {
     validationSchema: validationSchema,
     onSubmit: async (values, { resetForm }) => {
       const tableData = await axios.post(`${process.env.REACT_APP_API_URL}/table`, values)
-   
+
       if (tableData.status === 200) {
         fetchTableList()
         toast.success(tableData.data.msg)
@@ -82,13 +82,12 @@ const Tables = () => {
   return (
     <>
       <div className="dashboard">
-        <ToastContainer />
         <Sidebar />
         <div className="main-content">
           <Navbar />
           <div className="content">
             {tableList.map((item, id) => {
-              return <TableCard item={item} key={id} fetchTableList={fetchTableList} endpoint = "table"/>
+              return <TableCard item={item} key={id} fetchTableList={fetchTableList} endpoint="table" />
             })}
 
             <AddButton handleOpen={handleOpen} />

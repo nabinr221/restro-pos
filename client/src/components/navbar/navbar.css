@@ -1,5 +1,6 @@
 .navbar {
     width: 100%;
+    margin-bottom: 2rem;
     padding: .5rem;
     background-color: #fff;
     display: flex;

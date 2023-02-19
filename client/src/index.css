@@ -27,9 +27,11 @@ hr {
   color: #fff;
   background-color: chocolate;
 }
-.btnCancel:hover{
+
+.btnCancel:hover {
   background-color: rgb(255, 123, 29);
 }
+
 .btnSubmit {
   padding: 1rem;
   width: auto;
@@ -37,12 +39,26 @@ hr {
   color: #fff;
   background-color: rgb(30, 120, 210);
 }
+
 .btnSubmit:hover {
 
-background-color: #8875a8;
+  background-color: #8875a8;
 }
 
 .inputBox {
   background-color: transparent;
   margin: .7rem 0;
+}
+
+.inputGroup {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-wrapper {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
