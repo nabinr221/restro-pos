@@ -54,7 +54,8 @@
 }
 
 .sidebar ul li:hover,
-.sidebar ul li.active {
+.sidebar ul li.active,
+.sidebar ul .navlink.active li {
   color: #fff;
   background-color: #8875a8;
   border-right: 5px solid rgb(42, 5, 81);

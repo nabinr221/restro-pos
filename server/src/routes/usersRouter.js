@@ -59,5 +59,5 @@ router.post("/login", async (req, res) => {
 
 router.get('/users', usersControllers.getUsers)
 router.get('/user/:id', usersControllers.getUserDetails)
-
+router.delete('/user', usersControllers.deleteUser)
 module.exports = router;

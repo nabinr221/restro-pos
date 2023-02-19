@@ -1,0 +1,32 @@
+.users-card-box {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.users-card-box .users-card {
+    padding: 1rem;
+    width: auto;
+    min-height: 250px;
+    background-color: #fff;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+}
+
+.users-card-box .users-card .card-header {
+    /* background-color: blue; */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.users-card-box .users-card .card-content {
+    color: #999;
+    font-size: .9rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.users-card-box .users-card .card-content .card-title {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}

@@ -17,7 +17,7 @@ const getUsers = async (req, res) => {
     }
 }
 
-const getUserDetails =async (req, res)=>{
+const getUserDetails = async (req, res) => {
     try {
 
         const userDetails = await Users.findById(req.params.id)
@@ -34,8 +34,23 @@ const getUserDetails =async (req, res)=>{
     } catch (err) {
         console.log(err)
     }
-  
+
 }
 
+const deleteUser = async (req, res) => {
+    try {
+        const usersData = await Users.findByIdAndDelete(req.body._id)
+        if (usersData) {
+            res.status(204).json({ msg: 'User Deleted Successfully' })
+        } else {
+            res.status(409).json({ msg: "Something went wrong !!!" })
+        }
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+
 exports.getUsers = getUsers
+exports.deleteUser = deleteUser
 exports.getUserDetails = getUserDetails

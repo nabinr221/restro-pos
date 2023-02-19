@@ -19,14 +19,10 @@ const style = {
     p: 4,
 };
 
-const EditDelete = ({ id, endpoint, fetchList }) => {
+const EditDelete = ({ item, endpoint, fetchList }) => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
-
-
-
-
 
     const triggerDelete = async (id) => {
         console.log(id)
@@ -40,7 +36,7 @@ const EditDelete = ({ id, endpoint, fetchList }) => {
             const res = await fetch(`${process.env.REACT_APP_API_URL}/${endpoint}`, requestOptions);
             if (res.status === 204) {
                 handleClose()
-                toast.success(res.formData.msg,"tere")
+                toast.success("Deleted Successfully ")
                 fetchList()
                          
             }
@@ -82,15 +78,15 @@ const EditDelete = ({ id, endpoint, fetchList }) => {
                 >
                     <Box sx={style}>
                         <div className='modal-title'>
-                            <h3>Add Table </h3>
+                            <h3>Delete</h3>
                             <AiOutlineClose size={25} onClick={handleClose} style={{ cursor: 'pointer' }} />
                         </div>
                         <div className="content">
-                            <h1> Are you Sure You Want To Delete Menu: <span> Item</span></h1>
+                            <h1> Are you Sure You Want To Delete Menu: <span>{item.name}</span></h1>
                         </div>
                         <div className="modal-footer">
                             <button className='btnCancel' onClick={handleClose}>Cancel</button>
-                            <button className='btnSubmit' onClick={() => triggerDelete(id)} >Submit</button>
+                            <button className='btnSubmit' onClick={() => triggerDelete(item._id)} >Submit</button>
                         </div>
                     </Box>
                 </Modal>
